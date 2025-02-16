@@ -1,0 +1,48 @@
+/* Navbar.css */
+@font-face {
+    font-family: Brown;
+    src: url('../../Brown/Brown-Bold.woff');
+  }
+  
+  * {
+    font-family: Brown;
+  }
+  
+  nav {
+      background-color: #000000;
+      color: #fff;
+      position: fixed;
+      padding: 45px;
+    }
+    
+    head {
+      display: inline;
+      padding-top: 50ch;
+      font-size: 50px;
+    }
+    
+    ul {
+      padding-left: 90ch;
+      display: inline;
+    }
+    
+    li {
+      display: inline;
+      margin-right: 90px;
+      font-size: 20px;
+    }
+  
+    a {
+      color: #fff; /* Change text color */
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: none; /* Remove underline on hover */
+      color: #00e5ff; /* Change text color on hover */
+    }
+  
+    /* Example to prevent horizontal scrolling */
+  body {
+      overflow-x: hidden;
+    }
