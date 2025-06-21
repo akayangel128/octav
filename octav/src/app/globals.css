@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Brown-Bold';
+  src: url('/Brown/Brown-Bold.woff2') format('woff2'),
+       url('/Brown/Brown-Bold.woff') format('woff'),
+       url('/Brown/Brown-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brown-Regular';
+  src: url('/Brown/Brown-Regular.woff2') format('woff2'),
+       url('/Brown/Brown-Regular.woff') format('woff'),
+       url('/Brown/Brown-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brown-Light';
+  src: url('/Brown/Brown-Light.woff2') format('woff2'),
+       url('/Brown/Brown-Light.woff') format('woff'),
+       url('/Brown/Brown-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-brown-bold {
+  font-family: 'Brown-Bold', sans-serif;
+  font-weight: bold;
+}
+.font-brown-regular {
+  font-family: 'Brown-Regular', sans-serif;
+  font-weight: normal;
+}
+.font-brown-light {
+  font-family: 'Brown-Light', sans-serif;
+  font-weight: 300;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +58,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Brown Bold, sans-serif;
+  font-family: 'Brown-Regular', Arial, sans-serif;
+}
+
+footer {
+  font-family: 'Brown-Light', Arial, sans-serif;
 }
